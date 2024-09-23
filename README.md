@@ -1,6 +1,7 @@
 # Blank Project
+[![The stack](https://skillicons.dev/icons?i=react,tailwind,js,ts,nodejs)](https://skillicons.dev)
+<br/>
 The goal of this project is to be a repo that can be forked for creating personal projects.
-[![The stack](https://skillicons.dev/icons?i=react,ts,tailwind)](https://skillicons.dev)
 
 ## Getting Started
 
@@ -11,6 +12,6 @@ The goal of this project is to be a repo that can be forked for creating persona
 - To create a new route, add a new file under the /routes folder. Whatever you name the file will be the route that you will access in the URL.
 
 
-!תהנה
+## !תהנה
 
 
