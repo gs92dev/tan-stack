@@ -1,5 +1,5 @@
 # Blank Project
-[![The stack](https://skillicons.dev/icons?i=react,tailwind,js,ts,nodejs)](https://skillicons.dev)
+[![The stack](https://skillicons.dev/icons?i=react,ts,tailwind,nodejs,js)](https://skillicons.dev)
 <br/><br/>
 The goal of this project is to be a repo that can be forked for creating personal projects.
 
