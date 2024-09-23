@@ -1,50 +1,16 @@
-# React + TypeScript + Vite
+# Blank Project
+The goal of this project is to be a repo that can be forked for creating personal projects.
+[![The stack](https://skillicons.dev/icons?i=react,ts,tailwind)](https://skillicons.dev)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+- After you have forked the project, I recommend you Ctrl-F 'blank-project' and replace it everywhere with the name you are using in your repo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Each time you run `npm run dev` to start up the project, you should also run `npx tailwindcss -i ./src/input.css -o ./src/output.css --watch`. I recommend splitting your terminal and running one on each side. This second command is to watch your files for new Tailwind classes. Whenever you use a new Tailwind class, it is added to the output.css file. If you are ever trying to add something to the css file, you should add it to input.css, which will be generated into the output file that is used.
 
-## Expanding the ESLint configuration
+- To create a new route, add a new file under the /routes folder. Whatever you name the file will be the route that you will access in the URL.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+!תהנה
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
