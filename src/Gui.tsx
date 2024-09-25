@@ -18,7 +18,6 @@ export function Gui() {
         <p>Loading cat fact...</p>
       ) : (
         <div key={data.fact}>
-          {" "}
           {/* Use data.fact as a unique key */}
           <h1>{data.fact}</h1>
           <h1>{data.length}</h1> {/* Check if data has a length property */}
